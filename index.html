@@ -112,13 +112,24 @@
                         Crafting Fun and Engaging<br />
                         <span class="text-cyan-400 font-semibold">Mobile Experiences</span>
                     </p>
-                    <button
-                        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
-                        class="bg-gradient-accent text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-105 transform inline-flex items-center justify-center"
-                    >
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        Get In Touch
-                    </button>
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <button
+                            onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+                            class="bg-gradient-accent text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-105 transform inline-flex items-center justify-center"
+                        >
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            Get In Touch
+                        </button>
+                        <a 
+                            href="https://fabstudiogames.com/app-ads.txt" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="bg-gradient-to-r from-blue-500 to-cyan-400 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-105 transform inline-flex items-center justify-center"
+                        >
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            View app-ads.txt
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,13 +174,13 @@
     <footer class="bg-slate-900 border-t border-slate-700 py-8">
         <div class="max-w-7xl mx-auto px-6">
             <p class="text-center text-slate-400 text-sm">
-                &copy; 2025 FAB Studio Games. All rights reserved.
+                &copy; 2025 FAB Studio Games. All rights reserved.<br>
+                <span class="text-xs text-slate-500 mt-1 block">google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0</span>
             </p>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll for the header button (redundant but good practice)
         document.addEventListener('DOMContentLoaded', () => {
             const contactButton = document.querySelector('button[onclick*="contact"]');
             if(contactButton) {
@@ -179,20 +190,13 @@
                 });
             }
             
-            // Initial animation for hero section content
             const heroText = document.getElementById('hero-text');
-            const heroVisual = document.getElementById('hero-visual');
             setTimeout(() => {
                 heroText.classList.remove('opacity-0', 'translate-y-10');
                 heroText.classList.add('opacity-100', 'translate-y-0');
-                if (heroVisual) { // Check if heroVisual element exists before manipulating it
-                    heroVisual.classList.remove('opacity-0', 'translate-x-10');
-                    heroVisual.classList.add('opacity-100', 'translate-x-0');
-                }
             }, 100);
         });
 
-        // Parallax Effect for Background Circles
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const circle1 = document.getElementById('bg-circle-1');
