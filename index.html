@@ -6,13 +6,14 @@
     <title>Fab Studios - Crafting Fun and Engaging Mobile Experiences</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
         /* Base Styling & Custom Colors */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #0f172a; /* Corresponds to Tailwind slate-900 */
+            color: #ffffff; /* --- NEW: Set ALL default text to White --- */
         }
         .text-gradient {
             background-image: linear-gradient(to right, #22d3ee, #3b82f6); /* cyan-400 to blue-500 */
@@ -37,7 +38,6 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
-        /* NOTE: The animate-float and animate-bounce-slow classes and keyframes are now technically unnecessary, but kept for future use if needed. */
         .animate-float { animation: float 3s ease-in-out infinite; }
         .animate-float-delay { animation: float 4s ease-in-out infinite 1s; }
         .animate-bounce-slow { animation: bounce-slow 1.5s infinite; }
@@ -76,13 +76,24 @@
                     </div>
                     <span class="text-2xl font-extrabold text-white tracking-wider">FAB Studios</span>
                 </a>
-                <button 
-                    onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
-                    class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium text-lg px-3 py-1 rounded"
-                >
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                </button>
-            </div>
+                
+                <div class="flex space-x-4 items-center">
+                    <a 
+                        href="privacy.html"
+                        class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 py-2 text-sm font-semibold rounded-lg hover:opacity-80 transition-opacity flex items-center"
+                    >
+                        <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3"></path></svg>
+                        Privacy Policy
+                    </a>
+                    
+                    <button 
+                        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+                        class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium text-lg px-3 py-1 rounded"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </button>
+                </div>
+                </div>
         </div>
     </header>
 
@@ -102,7 +113,7 @@
         <div id="hero-content" class="max-w-7xl mx-auto px-6 relative z-10 py-16">
             <div class="flex justify-center items-center"> 
                 <div class="transition-opacity duration-1000 opacity-0 translate-y-10" id="hero-text">
-                    <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-tight">
+                    <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 leading-tight">
                         <span class="text-white">FAB</span>
                         <br />
                         <span class="text-gradient">
@@ -134,8 +145,7 @@
                 </div>
             </div>
         </div>
-
-        </section>
+    </section>
 
     <section id="contact" class="relative py-32 bg-slate-900">
         <div class="max-w-7xl mx-auto px-6">
@@ -178,14 +188,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const contactButton = document.querySelector('button[onclick*="contact"]');
-            if(contactButton) {
-                contactButton.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-                });
-            }
-            
             const heroText = document.getElementById('hero-text');
             setTimeout(() => {
                 heroText.classList.remove('opacity-0', 'translate-y-10');
@@ -193,6 +195,7 @@
             }, 100);
         });
 
+        // Parallax Effect for Background Circles (re-added for background styling)
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const circle1 = document.getElementById('bg-circle-1');
