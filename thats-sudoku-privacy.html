@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAB Studios Policies Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a; /* Slate-900 */
+            color: #f8fafc; /* Slate-50 */
+        }
+        .header-bg {
+            background-color: #1e293b; /* Slate-800 */
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #22d3ee, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .policy-link-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .policy-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(34, 213, 238, 0.1), 0 4px 6px -2px rgba(34, 213, 238, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen pt-20">
+
+    <!-- Header (Copied from index.html for consistent navigation) -->
+    <header class="fixed top-0 left-0 right-0 z-50 header-bg border-b border-gray-700/50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html#hero" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img 
+                            src="fab_logo.png"
+                            alt="FAB Studios Logo"
+                            class="w-full h-full object-contain"
+                        />
+                    </div>
+                    <span class="text-2xl font-extrabold text-white tracking-wider">FAB Studios</span>
+                </a>
+                
+                <div class="flex space-x-4">
+                    <a href="privacy.html" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 py-2 text-sm font-semibold rounded-lg hover:opacity-80 transition-opacity flex items-center">
+                        <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3"></path></svg>
+                        Policies
+                    </a>
+                    <button 
+                        onclick="window.location.href='index.html#contact';"
+                        class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium text-lg px-3 py-1 rounded"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-extrabold text-white mb-4 text-center">
+            <span class="text-gradient">FAB Studios</span> Policy Center
+        </h1>
+        
+        <p class="text-gray-400 text-lg text-center mb-12">
+            This hub contains all legal policies for FAB Studios and our published products.
+        </p>
+
+        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl border border-slate-700">
+            <h2 class="text-3xl font-bold text-white mb-4">Game-Specific Policies</h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+                Please select the policy page for the game you are interested in:
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Emoji Wave Policy Link -->
+                <a href="emoji-wave-privacy.html" class="block policy-link-card p-6 bg-slate-900 rounded-xl border border-cyan-500/50 hover:border-cyan-400 hover:shadow-cyan-900/50">
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9.25 12L12 9M12 12V3M12 12C12 16.9706 15.0294 21 19 21C22.9706 21 26 16.9706 26 12C26 7.02944 22.9706 3 19 3C15.0294 3 12 7.02944 12 12Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        Privacy Policy: Emoji Wave
+                    </h3>
+                    <p class="text-slate-400 text-sm">
+                        Details on data collection, advertising, and third-party services specifically for the Emoji Wave mobile game.
+                    </p>
+                </a>
+
+                <!-- Hip-Hop-Bro Policy Link -->
+                <a href="hip-hop-bro-privacy.html" class="block policy-link-card p-6 bg-slate-900 rounded-xl border border-cyan-500/50 hover:border-cyan-400 hover:shadow-cyan-900/50">
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13.5V17m-2-6l4-2m-4 2l4 2m-2-6l-2-4m4 4l2-4m-6 6a9 9 0 1118 0 9 9 0 01-18 0z"></path></svg>
+                        Privacy Policy: Hip-Hop-Bro
+                    </h3>
+                    <p class="text-slate-400 text-sm">
+                        Details on data collection, advertising, and third-party services specifically for the Hip-Hop-Bro mobile game.
+                    </p>
+                </a>
+                
+                <!-- That's Sudoku Policy Link -->
+                <a href="thats-sudoku-privacy.html" class="block policy-link-card p-6 bg-slate-900 rounded-xl border border-cyan-500/50 hover:border-cyan-400 hover:shadow-cyan-900/50">
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17L3 11m0 0l6-6m-6 6h18"></path></svg>
+                        Privacy Policy: That's Sudoku
+                    </h3>
+                    <p class="text-slate-400 text-sm">
+                        Details on data collection, advertising, and third-party services specifically for the That's Sudoku mobile game.
+                    </p>
+                </a>
+                
+            </div>
+        </section>
+
+        <!-- Placeholder for Other Policy Pages -->
+        <section class="mt-10 p-6 bg-slate-800 rounded-lg shadow-xl border border-slate-700">
+            <h2 class="text-3xl font-bold text-white mb-4">General/Terms of Service</h2>
+             <p class="text-gray-400 leading-relaxed">
+                General legal terms, website usage policies, and other terms of service will be linked here in the future.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-4">
+                <span class="px-3 py-1 bg-slate-700 text-slate-400 rounded-lg text-sm">Terms of Service (To Be Added)</span>
+                <span class="px-3 py-1 bg-slate-700 text-slate-400 rounded-lg text-sm">Website Usage (To Be Added)</span>
+            </div>
+        </section>
+        
+        <div class="mt-12 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Contact Us</h3>
+            <p class="text-gray-400 leading-relaxed max-w-xl mx-auto">
+                If you have any questions about any of our policies, please contact us at: 
+                <a href="mailto:media@fabstudiogames.com" class="text-cyan-400 hover:text-cyan-300 underline font-medium">media@fabstudiogames.com</a>
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer (Simplified) -->
+    <footer class="bg-slate-900 border-t border-gray-700/50 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center text-slate-400 text-sm">
+                &copy; 2025 FAB Studio Games. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
