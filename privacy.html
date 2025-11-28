@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - FAB Studios</title>
+    <title>FAB Studios Policies Center</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -23,6 +23,13 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             color: transparent;
+        }
+        .policy-link-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .policy-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(34, 213, 238, 0.1), 0 4px 6px -2px rgba(34, 213, 238, 0.05);
         }
     </style>
 </head>
@@ -45,7 +52,7 @@
                 <div class="flex space-x-4">
                     <a href="privacy.html" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-3 py-2 text-sm font-semibold rounded-lg hover:opacity-80 transition-opacity flex items-center">
                         <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3"></path></svg>
-                        Policy
+                        Policies
                     </a>
                     <button 
                         onclick="window.location.href='index.html#contact';"
@@ -58,49 +65,62 @@
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-12">
-        <h1 class="text-5xl font-extrabold text-white mb-8 text-center">
-            <span class="text-gradient">Privacy</span> Policy Center
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-5xl font-extrabold text-white mb-4 text-center">
+            <span class="text-gradient">FAB Studios</span> Policy Center
         </h1>
         
-        <p class="text-gray-400 text-sm text-center mb-10">Last Updated: November 26, 2025</p>
+        <p class="text-gray-400 text-lg text-center mb-12">
+            This hub contains all legal policies for FAB Studios and our published products.
+        </p>
 
-        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl">
-            <h2 class="text-3xl font-bold text-white mb-4">1. Introduction</h2>
-            <p class="text-gray-300 leading-relaxed">
-                Welcome to Fab Studios. This Privacy Policy governs our practices concerning data protection for our mobile games and website. Our mission is to craft fun and engaging experiences while respecting your privacy. This page serves as the main hub for all policies, including data handling, advertising, and terms of service.
+        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl border border-slate-700">
+            <h2 class="text-3xl font-bold text-white mb-4">Game-Specific Policies</h2>
+            <p class="text-gray-300 leading-relaxed mb-6">
+                Please select the policy page for the game you are interested in:
             </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <a href="emoji-wave-privacy.html" class="block policy-link-card p-6 bg-slate-900 rounded-xl border border-cyan-500/50 hover:border-cyan-400 hover:shadow-cyan-900/50">
+                    <h3 class="text-2xl font-semibold text-cyan-400 mb-2 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9.25 12L12 9M12 12V3M12 12C12 16.9706 15.0294 21 19 21C22.9706 21 26 16.9706 26 12C26 7.02944 22.9706 3 19 3C15.0294 3 12 7.02944 12 12Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                        Privacy Policy: Emoji Wave
+                    </h3>
+                    <p class="text-slate-400 text-sm">
+                        Details on data collection, advertising, and third-party services specifically for the Emoji Wave mobile game.
+                    </p>
+                </a>
+
+                <div class="block p-6 bg-slate-900 rounded-xl border border-slate-700 text-center opacity-50">
+                    <h3 class="text-2xl font-semibold text-slate-500 mb-2">
+                        Future Game Policy (Coming Soon)
+                    </h3>
+                    <p class="text-slate-600 text-sm">
+                        This section will be updated when our next game is released.
+                    </p>
+                </div>
+
+            </div>
         </section>
 
-        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl">
-            <h2 class="text-3xl font-bold text-white mb-4">2. Data We Collect</h2>
-            <p class="text-gray-300 leading-relaxed">
-                We primarily use anonymous data to improve game performance. We do not collect or store personal identifying information (PII) such as names, addresses, or emails from children. The data collected is limited to:
+        <section class="mt-10 p-6 bg-slate-800 rounded-lg shadow-xl border border-slate-700">
+            <h2 class="text-3xl font-bold text-white mb-4">General/Terms of Service</h2>
+             <p class="text-gray-400 leading-relaxed">
+                General legal terms, website usage policies, and other terms of service will be linked here in the future.
             </p>
-            <ul class="list-disc list-inside ml-4 mt-3 text-gray-300">
-                <li>Non-personalized advertising identifiers (subject to platform controls).</li>
-                <li>Game progress and device language settings.</li>
-                <li>Crash reports and anonymous usage statistics.</li>
-            </ul>
+            <div class="flex flex-wrap gap-4 mt-4">
+                <span class="px-3 py-1 bg-slate-700 text-slate-400 rounded-lg text-sm">Terms of Service (To Be Added)</span>
+                <span class="px-3 py-1 bg-slate-700 text-slate-400 rounded-lg text-sm">Website Usage (To Be Added)</span>
+            </div>
         </section>
-
-        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl">
-            <h2 class="text-3xl font-bold text-white mb-4">3. Advertising and Monetization</h2>
-            <p class="text-gray-300 leading-relaxed">
-                Our games may contain contextual, non-personalized advertising served by Google AdMob, or other verified ad providers. We implement measures to comply with platform regulations, including COPPA and GDPR, by ensuring no personalized ads are served to users identified as children.
+        
+        <div class="mt-12 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">Contact Us</h3>
+            <p class="text-gray-400 leading-relaxed max-w-xl mx-auto">
+                If you have any questions about any of our policies, please contact us at: 
+                <a href="mailto:media@fabstudiogames.com" class="text-cyan-400 hover:text-cyan-300 underline font-medium">media@fabstudiogames.com</a>
             </p>
-        </section>
-
-        <section class="mb-10 p-6 bg-slate-800 rounded-lg shadow-xl">
-            <h2 class="text-3xl font-bold text-white mb-4">4. Contact Information</h2>
-            <p class="text-gray-300 leading-relaxed">
-                For any questions or concerns regarding this policy, please contact us at: <a href="mailto:media@fabstudiogames.com" class="text-cyan-400 hover:text-cyan-300 underline">media@fabstudiogames.com</a>.
-            </p>
-        </section>
-
-        <div class="mt-12 p-4 border border-cyan-500/50 rounded-lg text-center">
-             <h3 class="text-2xl font-semibold text-cyan-400 mb-3">Other Legal Pages</h3>
-             <p class="text-gray-400">Future policy pages (e.g., Terms of Service, GDPR Details) will be linked here.</p>
         </div>
 
     </main>
