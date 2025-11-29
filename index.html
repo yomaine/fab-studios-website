@@ -174,25 +174,27 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-700 py-8">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-start text-sm">
             
-            <!-- Left Side: Copyright and Ad Text -->
-            <div class="text-left">
+            <!-- Left Side: Copyright (ONLY) -->
+            <div class="text-left flex flex-col justify-start">
                 <p class="text-slate-400">
-                    &copy; 2025 FAB Studio Games. All rights reserved.<br>
-                    <span class="text-xs text-slate-500 mt-1 block">google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0</span>
+                    &copy; 2025 FAB Studio Games. All rights reserved.
                 </p>
+                <!-- NOTE: Removed the redundant google.com pub-... text block here. -->
             </div>
             
-            <!-- Right Side: Policies Link (New Position) -->
-            <div class="flex space-x-4">
-                <!-- app-ads.txt text link (NEW) -->
+            <!-- Right Side: Links -->
+            <div class="flex space-x-4 text-right">
+                
+                <!-- View app-ads.txt text link (Now with icon and styled like Policies) -->
                 <a 
                     href="https://fabstudiogames.com/app-ads.txt" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium flex items-center"
                 >
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     View app-ads.txt
                 </a>
                 
@@ -201,6 +203,7 @@
                     href="privacy.html" 
                     class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium flex items-center"
                 >
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3"></path></svg>
                     Policies
                 </a>
             </div>
