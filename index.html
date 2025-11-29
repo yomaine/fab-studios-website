@@ -127,7 +127,7 @@
                         <span class="text-cyan-400 font-semibold">Mobile Experiences</span>
                     </p>
                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <!-- 'Get In Touch' Button -->
+                        <!-- 'Get In Touch' Button (ONLY BUTTON LEFT IN HERO) -->
                         <button
                             onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
                             class="bg-gradient-accent text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-105 transform inline-flex items-center justify-center"
@@ -135,16 +135,6 @@
                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             Get In Touch
                         </button>
-                        <!-- 'View app-ads.txt' Button -->
-                        <a 
-                            href="https://fabstudiogames.com/app-ads.txt" 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            class="bg-gradient-accent text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:scale-105 transform inline-flex items-center justify-center"
-                        >
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                            View app-ads.txt
-                        </a>
                     </div>
                 </div>
             </div>
@@ -195,13 +185,25 @@
             </div>
             
             <!-- Right Side: Policies Link (New Position) -->
-            <a 
-                href="privacy.html" 
-                class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium text-lg px-3 py-1 rounded flex items-center"
-            >
-                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3"></path></svg>
-                Policies
-            </a>
+            <div class="flex space-x-4">
+                <!-- app-ads.txt text link (NEW) -->
+                <a 
+                    href="https://fabstudiogames.com/app-ads.txt" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium flex items-center"
+                >
+                    View app-ads.txt
+                </a>
+                
+                <!-- Policies Link -->
+                <a 
+                    href="privacy.html" 
+                    class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium flex items-center"
+                >
+                    Policies
+                </a>
+            </div>
 
         </div>
     </footer>
